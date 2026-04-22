@@ -1,0 +1,191 @@
+/*
+#5D8AA8 (Air Force Blue)
+#4A90E2 (Sky Blue)
+#E5E4E2 (Platinum)
+#F5F7FA (خلفية باهتة جداً)
+border-radius: 8px
+*/
+
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+-- FONT SIZE SYSTEM (px) 
+- smaller font : 10 / 12 / 14 
+- noemal font : 16 / 18 / 20 / 24 / 30 / 32 
+36 / 44  
+- big font : 52 / 62 / 74 / 86 / 98
+
+-- Font Weights:
+- Default: 400
+500
+600
+700
+
+-- Line heights:
+- Default: 1
+1.1
+1.6
+--- 02 COLORS
+
+- Primary : #4A90E2
+- Tints : #b7d3f3
+- Shades : #3b73b5
+- Accents :
+- Greys
+#555
+#333
+
+--- 05 SHADOWS
+- inset 0 0 0 3px 
+
+
+--- 06 BORDER_Radius
+- Defualt : 9px
+
+--- 07 WHITESPACE
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/***************************************/
+/* --- GENERAL REUSABLE COMPONENTS --- */
+/***************************************/
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  /* color: #333; */
+  color: #343a40;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.1;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  color: #3b73b5;
+  margin-bottom: 1.6rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 9px;
+  transition: all 0.3s;
+
+  border: none;
+  cursor: pointer;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  color: #fff;
+  background-color: #4a90e2;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  color: #fff;
+  background-color: #3b73b5;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  color: #555;
+  background-color: #fff;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  color: #555;
+  background-color: #b7d3f3;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid-low-gap {
+  display: grid;
+  column-gap: 3.8rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(74, 145, 226, 0.5);
+}
